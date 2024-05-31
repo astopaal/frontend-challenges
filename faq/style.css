@@ -1,0 +1,52 @@
+.question {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-box {
+    border: solid 1px #dfdfdf;
+    border-radius: 4px;
+    padding:15px;
+    margin: 3px;
+}
+
+.content-box .question span::before {
+    content:'+';
+    color:rgb(255, 98, 98);
+    font-size: 30px;
+    font-weight: 100;
+
+}
+.content-box.clicked .question span::before {
+    content:'-';
+    color:rgb(255, 98, 98);
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+.content-box .content {
+    font-size: small;
+    width: 75%;
+    height:0px;
+    overflow: hidden;
+    transition: 0.7s;
+
+}
+
+.content-box.clicked {
+    border: solid 1px #dfdfdf;
+    border-radius: 4px;
+    padding:15px;
+    margin: 3px;
+    box-shadow: 0px 8px 5px #dddddd;
+}
+
+.content-box.clicked .content {
+    font-size: small;
+    width: 75%;
+    height:80px;
+    overflow: hidden;
+}
